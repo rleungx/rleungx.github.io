@@ -2,7 +2,7 @@ import React from "react"
 import { graphql } from "gatsby"
 import styled from "@emotion/styled"
 import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 
 const Content = styled.div`
   margin: 0 auto;
@@ -50,24 +50,26 @@ const MarkdownContent = styled.div`
   }
 `
 
-export default ({ data }) => {
+const BlogPostPage = ({ data }) => {
   const post = data.markdownRemark
   return (
     <Layout>
-      <SEO
+      <Seo
         title={post.frontmatter.title}
         description={post.frontmatter.description || post.excerpt}
       />
       <Content>
         <MarkedHeader>{post.frontmatter.title}</MarkedHeader>
         <HeaderDate>
-          {post.frontmatter.date} - {post.fields.readingTime.text}
+          {post.frontmatter.date}
         </HeaderDate>
         <MarkdownContent dangerouslySetInnerHTML={{ __html: post.html }} />
       </Content>
     </Layout>
   )
 }
+
+export default BlogPostPage;
 
 export const pageQuery = graphql`
   query($path: String!) {
@@ -78,11 +80,6 @@ export const pageQuery = graphql`
         date(formatString: "DD MMMM, YYYY")
         path
         title
-      }
-      fields {
-        readingTime {
-          text
-        }
       }
     }
   }
