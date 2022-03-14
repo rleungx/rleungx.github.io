@@ -20,13 +20,14 @@ const Content = styled.div`
   padding-top: 0;
 `
 
-const GatsbyLink = styled.a`
-  margin-left: 5px;
-`
-
 const Footer = styled.footer`
   display: flex;
   justify-content: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
 `
 
 const Layout = ({ children }) => (
@@ -46,9 +47,7 @@ const Layout = ({ children }) => (
         <Content>
           <main>{children}</main>
           <Footer>
-            © {new Date().getFullYear()}, Built with
-            {` `}
-            <GatsbyLink href="https://www.gatsbyjs.org">Gatsby</GatsbyLink>
+            © {new Date().getFullYear()} Ryan Leung
           </Footer>
         </Content>
       </>

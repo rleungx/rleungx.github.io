@@ -18,16 +18,11 @@ const ArticleDate = styled.h5`
   margin-bottom: 10px;
 `
 
-const MarkerHeader = styled.h3`
+const MarkerHeader = styled.h2`
   display: inline;
   border-radius: 1em 0 1em 0;
   margin-bottom: 10px;
-  background-image: linear-gradient(
-    -100deg,
-    rgba(255, 250, 150, 0.15),
-    rgba(255, 250, 150, 0.8) 100%,
-    rgba(255, 250, 150, 0.25)
-  );
+  line-height: 2em;
 `
 
 const IndexPage = ({ data }) => {
@@ -35,7 +30,6 @@ const IndexPage = ({ data }) => {
     <Layout>
       <Seo title="Blog" />
       <Content>
-        <h1>Blog</h1>
         {data.allMarkdownRemark.edges.map(({ node }) => (
           <div key={node.id}>
             <Link
@@ -49,7 +43,6 @@ const IndexPage = ({ data }) => {
               <div>
                 <ArticleDate>{node.frontmatter.date}</ArticleDate>
               </div>
-              <p>{node.excerpt}</p>
             </Link>
           </div>
         ))}
@@ -83,7 +76,6 @@ export const query = graphql`
           fields {
             slug
           }
-          excerpt
         }
       }
     }
