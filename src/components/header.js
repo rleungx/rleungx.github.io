@@ -3,12 +3,6 @@ import styled from "@emotion/styled"
 import PropTypes from "prop-types"
 import React from "react"
 
-const Content = styled.div`
-  max-width: 860px;
-  padding: 1rem 1.0875rem;
-  font-size: 1.2rem;
-`
-
 const NavLink = styled(Link)`
   color: black;
   margin-left: 15px;
@@ -33,13 +27,18 @@ const HomeLink = styled(NavLink)`
 const SiteHeader = styled.header`
   background: transparent;
   display: flex;
-  align-content: right;
-  justify-content: right;
+`
+
+const NavContent = styled.div`
+  margin: 0 auto;
+  max-width: 860px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 `
 
 const Header = ({ siteTitle }) => (
   <SiteHeader>
-    <Content>
+    <NavContent>
       <p>
         <HomeLink to="/">
         <img align="left" alt="rleungx's Home" width="25px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/maas.svg" />
@@ -54,7 +53,7 @@ const Header = ({ siteTitle }) => (
           <img align="left" alt="rleungx's LinkedIn" width="25px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/linkedin.svg" />
         </ExternalLink>
       </p>
-    </Content>
+    </NavContent>
   </SiteHeader>
 )
 

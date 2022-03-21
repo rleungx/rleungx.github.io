@@ -4,12 +4,6 @@ import styled from "@emotion/styled"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 
-const Content = styled.div`
-  margin: 0 auto;
-  max-width: 860px;
-  padding: 1.45rem 1.0875rem;
-`
-
 const MarkedHeader = styled.h1`
   display: inline;
   border-radius: 1em 0 1em 0;
@@ -44,6 +38,12 @@ const MarkdownContent = styled.div`
   }
 `
 
+const BlogContent = styled.div`
+  margin: 0 auto;
+  max-width: 860px;
+  padding: 1.45rem 1.0875rem;
+`
+
 const BlogPostPage = ({ data }) => {
   const post = data.markdownRemark
   return (
@@ -52,13 +52,13 @@ const BlogPostPage = ({ data }) => {
         title={post.frontmatter.title}
         description={post.frontmatter.description}
       />
-      <Content>
+      <BlogContent>
         <MarkedHeader>{post.frontmatter.title}</MarkedHeader>
         <HeaderDate>
           {post.frontmatter.date}
         </HeaderDate>
         <MarkdownContent dangerouslySetInnerHTML={{ __html: post.html }} />
-      </Content>
+      </BlogContent>
     </Layout>
   )
 }

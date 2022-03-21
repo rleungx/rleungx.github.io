@@ -15,15 +15,15 @@ const OuterContainer = styled.div`
   height: 78vh;
 `
 
-const Description = styled.p`
-  padding: 0;
+
+const Description = styled('p')`
   margin-bottom: 1rem;
-  font-size: 1.4rem;
+  font-size: 2rem;
+  padding-top: 15px;
 `
 
-const NameHeader = styled.h1`
-  font-size: 3.5rem;
-  margin-bottom: 0;
+const NameHeader = styled.nameheader`
+  font-size: 8rem;
 `
 
 const LandingBio = () => (

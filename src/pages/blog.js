@@ -13,16 +13,17 @@ const Content = styled.div`
 `
 
 const ArticleDate = styled.h5`
-  display: inline;
   color: #606060;
   margin-bottom: 10px;
+  padding-bottom: 1em;
 `
 
 const MarkerHeader = styled.h2`
   display: inline;
   border-radius: 1em 0 1em 0;
   margin-bottom: 10px;
-  line-height: 2em;
+  line-height: 1.5em;
+  font-size: 2.5rem;
 `
 
 const IndexPage = ({ data }) => {
