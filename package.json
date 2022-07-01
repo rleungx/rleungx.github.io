@@ -1,54 +1,26 @@
 {
-  "name": "rleungx",
-  "private": true,
-  "description": "A personal website",
-  "version": "0.1.0",
-  "author": "Ryan Leung <rleungx@gmail.com>",
-  "dependencies": {
-    "@emotion/react": "^11.8.1",
-    "@emotion/styled": "^11.8.1",
-    "gatsby": "^4.9.1",
-    "gatsby-image": "^3.11.0",
-    "gatsby-plugin-emotion": "^7.9.0",
-    "gatsby-plugin-manifest": "^4.9.0",
-    "gatsby-plugin-netlify": "^4.1.0",
-    "gatsby-plugin-offline": "^5.9.0",
-    "gatsby-plugin-react-helmet": "^5.9.0",
-    "gatsby-plugin-sharp": "^4.9.0",
-    "gatsby-remark-prismjs": "^6.9.0",
-    "gatsby-source-filesystem": "^4.9.0",
-    "gatsby-transformer-remark": "^5.9.0",
-    "gatsby-transformer-sharp": "^4.9.0",
-    "prism-themes": "^1.1.0",
-    "prismjs": "^1.17.1",
-    "prop-types": "^15.7.2",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "react-helmet": "^6.1.0",
-    "typeface-nunito": "^1.1.13"
-  },
-  "devDependencies": {
-    "gh-pages": "^3.2.3",
-    "prettier": "^2.5.1"
-  },
-  "keywords": [
-    "gatsby"
-  ],
-  "license": "MIT",
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
-    "format": "prettier --write src/**/*.{js,jsx}",
-    "start": "npm run develop",
+    "develop:cypress": "cross-env CYPRESS_SUPPORT=y yarn develop",
+    "build:cypress": "cross-env CYPRESS_SUPPORT=y yarn build",
+    "start": "gatsby develop",
     "serve": "gatsby serve",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\"",
-    "deploy": "gatsby build && gh-pages -b master -d public -r https://$GH_TOKEN@github.com/rleungx/rleungx.github.io.git"
+    "clean": "gatsby clean"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+  "dependencies": {
+    "@lekoarts/gatsby-theme-minimal-blog": "^4.0.0",
+    "gatsby": "^4.12.1",
+    "gatsby-omni-font-loader": "^2.0.0",
+    "gatsby-plugin-feed": "^4.12.1",
+    "gatsby-plugin-gatsby-cloud": "^4.12.1",
+    "gatsby-plugin-manifest": "^4.12.1",
+    "gatsby-plugin-sitemap": "^5.12.1",
+    "gatsby-plugin-webpack-bundle-analyser-v2": "^1.1.27",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
   },
-  "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+  "devDependencies": {
+    "cross-env": "^7.0.3"
   }
 }
