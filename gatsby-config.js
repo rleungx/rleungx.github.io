@@ -86,6 +86,12 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-plugin-disqus`,
+      options: {
+        shortname: `rleungx`
+      }
+    },
+    {
       resolve: `gatsby-plugin-feed`,
       options: {
         query: `

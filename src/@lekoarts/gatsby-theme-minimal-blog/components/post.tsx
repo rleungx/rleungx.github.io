@@ -6,6 +6,7 @@ import Layout from "@lekoarts/gatsby-theme-minimal-blog/src/components/layout"
 import ItemTags from "@lekoarts/gatsby-theme-minimal-blog/src/components/item-tags"
 import Seo from "@lekoarts/gatsby-theme-minimal-blog/src/components/seo"
 import PostFooter from "@lekoarts/gatsby-theme-minimal-blog/src/components/post-footer"
+import { Disqus } from "gatsby-plugin-disqus";
 
 type PostProps = {
   data: {
@@ -68,6 +69,7 @@ const Post = ({ data: { post } }: PostProps) => (
     >
       <MDXRenderer>{post.body}</MDXRenderer>
     </section>
+    <Disqus config={{ identifier: post.slug, title: post.title }} />
     <PostFooter post={post} />
   </Layout>
 )
