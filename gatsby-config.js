@@ -96,6 +96,7 @@ module.exports = {
       options: {
         trackingIds: [
           process.env.GOOGLE_ANALYTICS_TRACKING_ID,
+          process.env.GOOGLE_ANALYTICS_MEASUREMENT_ID,
         ],
       },
     },
