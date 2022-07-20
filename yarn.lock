@@ -1066,7 +1066,7 @@
     "core-js-pure" "^3.20.2"
     "regenerator-runtime" "^0.13.4"
 
-"@babel/runtime@^7.0.0", "@babel/runtime@^7.10.0", "@babel/runtime@^7.10.2", "@babel/runtime@^7.12.5", "@babel/runtime@^7.13.10", "@babel/runtime@^7.15.4", "@babel/runtime@^7.17.8", "@babel/runtime@^7.18.0", "@babel/runtime@^7.18.3", "@babel/runtime@^7.7.2", "@babel/runtime@^7.7.7", "@babel/runtime@^7.8.4", "@babel/runtime@^7.9.2":
+"@babel/runtime@^7.0.0", "@babel/runtime@^7.10.0", "@babel/runtime@^7.10.2", "@babel/runtime@^7.12.5", "@babel/runtime@^7.13.10", "@babel/runtime@^7.15.4", "@babel/runtime@^7.17.8", "@babel/runtime@^7.18.0", "@babel/runtime@^7.18.3", "@babel/runtime@^7.2.0", "@babel/runtime@^7.7.2", "@babel/runtime@^7.7.7", "@babel/runtime@^7.8.4", "@babel/runtime@^7.9.2":
   "integrity" "sha512-t9wi7/AW6XtKahAe20Yw0/mMljKq0B1r2fPdvaAdV/KPDZewFXdaaa6K7lxmZBZ8FBNpCiAT6iHPmd6QO9bKfQ=="
   "resolved" "https://registry.npmjs.org/@babel/runtime/-/runtime-7.18.6.tgz"
   "version" "7.18.6"
@@ -6812,6 +6812,21 @@
     "lodash" "^4.17.21"
     "webpack-assets-manifest" "^5.1.0"
 
+"gatsby-plugin-google-adsense@^1.1.3":
+  "integrity" "sha512-tzEg4UIMXCTn+NSB580jzvOgDVTY/+ZbSwQ0EfHUDDqdnvI5KnSQP84mGC5bd96Qy9L15+l9ZRtZ17EdoKBe7g=="
+  "resolved" "https://registry.npmjs.org/gatsby-plugin-google-adsense/-/gatsby-plugin-google-adsense-1.1.3.tgz"
+  "version" "1.1.3"
+  dependencies:
+    "@babel/runtime" "^7.2.0"
+
+"gatsby-plugin-google-gtag@^4.19.0":
+  "integrity" "sha512-pqSMy9AHVV+lZwxkEuZPsZKrNELyTCP4VDfpYZLEBQwiCzuOrPtFG0VrThblJxS7FDUju4LYStIuwypeOnazTQ=="
+  "resolved" "https://registry.npmjs.org/gatsby-plugin-google-gtag/-/gatsby-plugin-google-gtag-4.19.0.tgz"
+  "version" "4.19.0"
+  dependencies:
+    "@babel/runtime" "^7.15.4"
+    "minimatch" "^3.1.2"
+
 "gatsby-plugin-manifest@^4.12.1":
   "integrity" "sha512-LGxK2tko8DEGLVQEd4FRH3gTDdfSvhOXDuGJxtP5uz382DgVPbfYjU5KO72T6nZ8YJUOyOibCN8o+rw4OzvMzQ=="
   "resolved" "https://registry.npmjs.org/gatsby-plugin-manifest/-/gatsby-plugin-manifest-4.17.0.tgz"
@@ -7066,7 +7081,7 @@
     "@babel/core" "^7.15.5"
     "@babel/runtime" "^7.15.4"
 
-"gatsby@^2.0.0 || ^3.0.0", "gatsby@^2.0.0 || ^3.0.0 || ^4.0.0", "gatsby@^2.0.0 || ^3.0.0 || ^4.0.0 || ^5.0.0", "gatsby@^4.0.0", "gatsby@^4.0.0-next", "gatsby@^4.12.1":
+"gatsby@^2.0.0 || ^3.0.0", "gatsby@^2.0.0 || ^3.0.0 || ^4.0.0", "gatsby@^2.0.0 || ^3.0.0 || ^4.0.0 || ^5.0.0", "gatsby@^4.0.0", "gatsby@^4.0.0-next", "gatsby@^4.12.1", "gatsby@>2.0.0-alpha":
   "integrity" "sha512-OgwNwx7Mth7/MiwiJ7kxmGSAlmZXfL/8Nz6uwCy5t7fGsivi3x9ZDc7pt1VbFpSv6pMg6S3wpC2Ids8BLjJKVw=="
   "resolved" "https://registry.npmjs.org/gatsby/-/gatsby-4.17.1.tgz"
   "version" "4.17.1"
